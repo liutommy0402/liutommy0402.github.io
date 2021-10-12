@@ -1,0 +1,65 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /> 
+    <link href="css/bootstrap.css" rel="stylesheet" /> 
+    <script src="js/bootstrap.js"></script>
+    <link href="css/base.css" rel="stylesheet" />                                     
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <div class="container-fluid">
+        <div class="row">  
+            <div id="header" class="col-lg-12">
+                <h1>Logo OTAKU</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div id="nav" class="col-lg-12">
+                <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" StaticDisplayLevels="2" BackColor="#B5C7DE" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="1em" ForeColor="#284E98" StaticSubMenuIndent="10px" Width="100%">
+                    <DynamicHoverStyle BackColor="#284E98" ForeColor="White" />
+                    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <DynamicMenuStyle BackColor="#B5C7DE" />
+                    <DynamicSelectedStyle BackColor="#507CD1" />
+                    <StaticHoverStyle BackColor="#284E98" ForeColor="White" />
+                    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <StaticSelectedStyle BackColor="#507CD1" />
+                </asp:Menu>
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-xs-12">
+                <div class="masterbox">
+                    <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                    </asp:SiteMapPath>
+                    <asp:Calendar ID="Calendar1" runat="server" Width="100%"></asp:Calendar>                                      
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-8 col-xs-12">
+                <div class="masterbox">                   
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                    </asp:ContentPlaceHolder>                   
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="footer" class="col-lg-12">
+                <br />
+                <h4>資管三A isu10522021a 劉又瑋 </h4>
+            </div>
+        </div>   
+    </div>
+    </form>
+</body>
+</html>

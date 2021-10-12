@@ -1,0 +1,31 @@
+﻿body {
+    background-color:lightgray;
+}
+.container-fluid{
+}
+#header{
+    background-color:#284E98;
+    color:white;
+    height:100px;
+    margin:0;
+    
+}
+#nav{
+    text-align:center;
+    height:40px;
+}
+.box{
+    border:2px solid #CCCCCC;
+    height:200px;
+    margin:10px 10px;
+}
+.masterbox{
+    border:2px solid #CCCCCC;
+    margin:10px 10px;
+}
+#footer{
+    background-color:gray;
+    color:white;
+    text-align:center;
+    height:100px;
+}

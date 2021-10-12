@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="index.aspx" title="首頁"  description="">
+    <siteMapNode url="Main/News.aspx" title="最新消息"  description="" />
+    <siteMapNode url="" title="公司介紹"  description="" >
+      <siteMapNode url="" title="經營理念"  description="" />
+      <siteMapNode url="" title="公司組織"  description="" />
+      <siteMapNode url="" title="交通位置"  description="" />
+    </siteMapNode>
+    <siteMapNode url="" title="會員專區"  description="" />
+    <siteMapNode url="" title="購物專區"  description="" />
+    <siteMapNode url="" title="留言板"  description="" >
+      <siteMapNode url="Main/Board.aspx" title="留言板主題畫面"  description="" />
+      <siteMapNode url="Main/BoardAdd.aspx" title="新增留言"  description="" />
+    </siteMapNode>
+    <siteMapNode url="Main/forum.aspx" title="討論區"  description="" />
+    <siteMapNode url="Main/webLink.aspx" title="好站相連"  description="" />
+    <siteMapNode url="Main/WebMap.aspx" title="網站導覽"  description="" />
+  </siteMapNode>
+</siteMap>

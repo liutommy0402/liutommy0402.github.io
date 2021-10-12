@@ -1,0 +1,67 @@
+﻿<%@ Master Language="VB" CodeFile="Admin.master.vb" Inherits="Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /> 
+    <link href="css/bootstrap.css" rel="stylesheet" /> 
+    <script src="js/bootstrap.js"></script>
+    <link href="css/base.css" rel="stylesheet" />                                     
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <div class="container-fluid">
+        <div class="row">  
+            <div id="header" class="col-lg-12">
+                <h1>管理者系統</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div id="nav" class="col-lg-12">
+                <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem Text="好站相連管理" Value="好站相連管理" NavigateUrl="~/Admin/Ad_WebLink.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="最新消息管理" Value="最新消息管理" NavigateUrl="~/Admin/Ad_News.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="留言版管理" Value="留言版管理" NavigateUrl="~/Admin/Ad_Board.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="討論區管理" Value="討論區管理" NavigateUrl="~/Admin/Ad_forum.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="購物車管理" Value="購物車管理"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+                <asp:SiteMapDataSource ID="SiteMapDataSource3" runat="server" />
+                <asp:SiteMapDataSource ID="SiteMapDataSource2" runat="server" />
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-xs-12">
+                <div class="masterbox">
+                    <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                    </asp:SiteMapPath>
+                    <asp:Calendar ID="Calendar1" runat="server" Width="100%"></asp:Calendar>                                      
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-9 col-xs-12">
+                <div class="masterbox">                   
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                    </asp:ContentPlaceHolder>                   
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="footer" class="col-lg-12">
+                <br />
+                <h4>資管三A isu10522021a 劉又瑋 </h4>
+            </div>
+        </div>   
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,65 @@
+﻿@charset "utf-8";
+h2{
+    color:blue;
+    background-color:orange;
+}
+*{
+    font-family:"微軟正黑體", "Arial Unicode MS"
+}
+h1,h2,h3{
+    color:green;
+}
+.blue{
+    background-color:blue;
+    color:white;
+}
+#red{
+    background-color:red;
+    color:yellow;
+}
+h1.special{
+    font-size:40pt
+}
+ul li{
+    color:brown
+}
+#wrapper{
+    width:100%;
+    background-color:lightgray;
+}
+#header{
+    padding:1px;
+    background-color:yellow;
+}
+#main{
+    width:100%;
+}
+#left{
+    width:25%;
+    float:left;
+    background-color:aqua;
+}
+#right{
+    width:75%;
+    float:right;
+    background-color:skyblue;
+}
+#footer{
+    clear:both;
+    width:100%;
+    text-align:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

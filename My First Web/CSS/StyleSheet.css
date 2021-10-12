@@ -1,0 +1,38 @@
+﻿body {
+    font-family: 微軟正黑體, "Arial Unicode MS";
+    background-image: url('../html/image.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+s
+h1 {
+    margin: 0px;
+}
+#wrapper{
+    width:100%
+}
+#header h1{
+    color:brown;
+    border:1px solid grey;
+    font-size:40pt; 
+}
+#main{
+    width:100%;
+}
+#left{
+    width:75%;
+    float:left;
+}
+#right{
+    width:75%;
+    float:right;
+}
+#footer{
+    clear:both;
+    width:100%;
+    text-align:center;
+    border:1px solid grey;
+}
+a:link,a:visited{text-decoration:none}
+a:hover,a:active{font-size:large;color:green;text-decoration:underline}
